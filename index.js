@@ -2,9 +2,11 @@
 
 // Створюємо функцію з назвою calculateExpression, яка приймає один аргумент expression
 function calculateExpression(expression) {
-  //Преревіряємо чи аргумент є рядком
+  if (expression === String) {
+    return calculateExpression;
+  } //Преревіряємо чи аргумент є рядком
   //Якщо так повертаємо виконананий код
-  // Якщо ні повертаємо текст "Argument is not a string"
+  return "Argument is not a string"; // Якщо ні повертаємо текст "Argument is not a string"
 }
 
 console.log("Завдання 1 ====================================");
